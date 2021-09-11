@@ -5,10 +5,11 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+        meta(name='description', content='Key Kage is a family-owned keyboard and keycap manufacturer.')
+        meta(name='author', content='Key Kage')
+        meta(name='keywords', content='keycaps, keyboard, customize, language, oso oseyo, 어서오세요, 키보드, 키캡, 한글, 한글키보드, 日本語, キーボード')
 
-        title Coming Soon - Start Bootstrap Theme
+        title Key Kage - Coming Soon
 
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
 
@@ -19,6 +20,9 @@ html(lang='en')
         link(rel='preconnect' href='https://fonts.gstatic.com')
         link(href='https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap' rel='stylesheet')
         link(href='https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap' rel='stylesheet')
+
+
+        link(href='https://s.pageclip.co/v1/pageclip.css', media="screen")
 
 
         // Core theme CSS (includes Bootstrap)
@@ -33,21 +37,14 @@ html(lang='en')
         // Masthead
         .masthead
             .masthead-content.text-white
+            
                 .container-fluid.px-4.px-lg-0
                     h1.fst-italic.lh-1.mb-4 Our Website is Coming Soon
                     p.mb-5
-                        | We're working hard to finish the development of this site. Sign up below to receive updates and to be notified when we launch!
-                    
-                    // * * * * * * * * * * * * * * *
-                    // * * SB Forms Contact Form * *
-                    // * * * * * * * * * * * * * * *
+                        | We're clicking and clacking our hearts out. Sign up below to receive updates and to be notified when we launch!
 
-                    // This form is pre-integrated with SB Forms.
-                    // To make this form functional, sign up at
-                    // https://startbootstrap.com/solution/contact-forms
-                    // to get an API token!
-
-                    form#contactForm(data-sb-form-api-token='API_TOKEN')
+                 
+                    form#contactForm(action="https://send.pageclip.co/AQt8trAj4I2ZjXddRjjceIlwl2Jp0cml", class="pageclip-form", method="post")
 
                         // Email address input
 
@@ -55,9 +52,10 @@ html(lang='en')
                             .col
                                 input#email.form-control(
                                     type='email',
-                                    placeholder='Enter email address...',
-                                    aria-label='Enter email address...',
-                                    data-sb-validations='required,email'
+                                    placeholder='Enter email address',
+                                    aria-label='Enter email address',
+                                    data-sb-validations='required,email',
+                                    name="Email Address"
                                 )
                             .col-auto
                                 button#submitButton.btn.btn-primary.disabled(type='submit') Notify Me!
@@ -86,15 +84,18 @@ html(lang='en')
                         #submitErrorMessage.d-none
                             .text-center.text-danger.mb-3.mt-2 Error sending message!
 
+        
+        img#logo(src="assets/SvgjsG1991.png", width="100px", height="112px")
+
         // Social Icons
         // For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands
         .social-icons
             .d-flex.flex-row.flex-lg-column.justify-content-center.align-items-center.h-100.mt-3.mt-lg-0
-                a.btn.btn-dark.m-3(href='#!')
-                    i.fab.fa-twitter
-                a.btn.btn-dark.m-3(href='#!')
-                    i.fab.fa-facebook-f
-                a.btn.btn-dark.m-3(href='#!')
+                //- a.btn.btn-dark.m-3(href='#!')
+                //-     i.fab.fa-twitter
+                //- a.btn.btn-dark.m-3(href='#!')
+                //-     i.fab.fa-facebook-f
+                a.btn.btn-dark.m-3(href='https://instagram.com/key.kage')
                     i.fab.fa-instagram
 
         // Bootstrap core JS
@@ -103,9 +104,11 @@ html(lang='en')
         // Core theme JS
         script(src='js/scripts.js')
 
+        script(src='https://s.pageclip.co/v1/pageclip.js', charset="utf-8")
+
         // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
         // * *                               SB Forms JS                               * *
         // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
         // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
+        //- script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
